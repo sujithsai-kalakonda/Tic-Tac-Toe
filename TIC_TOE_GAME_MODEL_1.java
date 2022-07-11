@@ -1,5 +1,3 @@
-package com.company;
-
 import java.util.Scanner;
 
 public class TIC_TOE_GAME_MODEL_1 {
@@ -121,21 +119,18 @@ public class TIC_TOE_GAME_MODEL_1 {
 //                "THIS IS FOR COL'S"
                 if (j == 0) {
                     if (arr[i][j] == arr[i][j + 1] && arr[i][j] == arr[i][j + 2] && arr[i][j] != 'n') {
-//                        System.out.println("WON");
                         return arr[i][j];
                     }
                 }
 
                 if (j == 1) {
                     if (arr[i][j] == arr[i][j - 1] && arr[i][j] == arr[i][j + 1] && arr[i][j] != 'n') {
-//                        System.out.println("WON");
                         return arr[i][j];
                     }
                 }
 
                 if (j == 2) {
                     if (arr[i][j] == arr[i][j - 1] && arr[i][j] == arr[i][j - 2] && arr[i][j] != 'n') {
-//                        System.out.println("WON");
                         return arr[i][j];
                     }
                 }
@@ -144,21 +139,18 @@ public class TIC_TOE_GAME_MODEL_1 {
 
                 if (i == 0) {
                     if (arr[i][j] == arr[i + 1][j] && arr[i][j] == arr[i + 2][j] && arr[i][j] != 'n') {
-//                        System.out.println("WON");
                         return arr[i][j];
                     }
                 }
 
                 if (i == 1) {
                     if (arr[i][j] == arr[i - 1][j] && arr[i][j] == arr[i + 1][j] && arr[i][j] != 'n') {
-//                        System.out.println("WON");
                         return arr[i][j];
                     }
                 }
 
                 if (i == 2) {
                     if (arr[i][j] == arr[i - 1][j] && arr[i][j] == arr[i - 2][j] && arr[i][j] != 'n') {
-//                        System.out.println("WON");
                         return arr[i][j];
                     }
                 }
@@ -168,13 +160,11 @@ public class TIC_TOE_GAME_MODEL_1 {
                     if (i == 0) {
                         if (j == 0) {
                             if (arr[i][j] == arr[i + 1][j + 1] && arr[i][j] == arr[i + 2][j + 2] && arr[i][j] != 'n') {
-//                                System.out.println("WON");
                                 return arr[i][j];
                             }
                         }
                         else if (j == 2) {
                             if (arr[i][j] == arr[i + 1][j - 1] && arr[i][j] == arr[i + 2][j - 2] && arr[i][j] != 'n') {
-//                                System.out.println("WON");
                                 return arr[i][j];
                             }
                         }
@@ -183,11 +173,9 @@ public class TIC_TOE_GAME_MODEL_1 {
                     if (i == 1) {
                         if (j == 1) {
                             if (arr[i][j] == arr[i - 1][j + 1] && arr[i][j] == arr[i + 1][j + 1] && arr[i][j] != 'n') {
-//                                System.out.println("WON");
                                 return arr[i][j];
                             }
                             if (arr[i][j] == arr[i - 1][j + 1] && arr[i][j] == arr[i + 1][j - 1] && arr[i][j] != 'n') {
-//                                System.out.println("WON");
                                 return arr[i][j];
                             }
                         }
@@ -197,13 +185,11 @@ public class TIC_TOE_GAME_MODEL_1 {
                         if (i == 0) {
                             if (j == 0) {
                                 if (arr[i][j] == arr[i - 1][j + 1] && arr[i][j] == arr[i - 2][j + 2] && arr[i][j] != 'n') {
-//                                    System.out.println("WON");
                                     return arr[i][j];
                                 }
                             }
                             else if (j == 2) {
                                 if (arr[i][j] == arr[i - 1][j - 1] && arr[i][j] == arr[i - 2][j - 2] && arr[i][j] != 'n') {
-//                                    System.out.println("WON");
                                     return arr[i][j];
                                 }
                             }
@@ -216,17 +202,4 @@ public class TIC_TOE_GAME_MODEL_1 {
 
         return 'n';
     }
-
-//    public static void cls()  // THIS IS FOR CLEARING SCREEN FOR EVERY INPUT, BUT NOT WORKING
-//    {
-//        try
-//        {
-//            new ProcessBuilder("cmd","/c","cls").inheritIO().start().waitFor();
-//        }
-//        catch(Exception E)
-//        {
-//            System.out.println(E);
-//        }
-//    }
-
 }
